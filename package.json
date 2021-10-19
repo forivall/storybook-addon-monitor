@@ -37,8 +37,8 @@
     "storybook": "start-storybook -p 6006",
     "start": "concurrently \"yarn build:watch\" \"yarn storybook -- --no-manager-cache --quiet\"",
     "build-storybook": "build-storybook",
-    "prerelease": "zx scripts/prepublish-checks.mjs",
-    "release": "yarn build && np",
+    "prepublishOnly": "zx scripts/prepublish-checks.mjs",
+    "prepare": "yarn build",
     "eject-ts": "zx scripts/eject-typescript.mjs"
   },
   "dependencies": {
@@ -54,7 +54,6 @@
     "@storybook/react": "^6.3.6",
     "np": "^7.5.0",
     "babel-loader": "^8.1.0",
-    "boxen": "^5.0.1",
     "concurrently": "^6.2.0",
     "dedent": "^0.7.0",
     "prettier": "^2.3.1",
