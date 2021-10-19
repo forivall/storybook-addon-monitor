@@ -2,10 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+/** Primary UI component for user interaction */
+export const Button = (props) => {
+  const {
+    primary,
+    backgroundColor,
+    size,
+    label,
+    onClicks,
+    onClick: onClickProp,
+    ...rest
+  } = props
+  const [clicks, updateClicks] = React.useState(0);
+  const onClick = React.useCallback((event) => {
+    onClickProp(event);
+    updateClicks((n) => n + 1);
+  }, []);
+  React.useEffect(() => {
+    if (onClicks) onClicks(clicks);
+  }, [onClicks, clicks]);
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
@@ -16,7 +31,8 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
         " "
       )}
       style={backgroundColor && { backgroundColor }}
-      {...props}
+      {...rest}
+      onClick={onClick}
     >
       {label}
     </button>
@@ -24,25 +40,15 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
+  /** Is this the principal call to action on the page? */
   primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
+  /** What background color to use */
   backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
+  /** How large should the button be? */
   size: PropTypes.oneOf(["small", "medium", "large"]),
-  /**
-   * Button contents
-   */
+  /** Button contents */
   label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
+  /** Optional click handler */
   onClick: PropTypes.func,
 };
 

@@ -1,5 +1,5 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storybook-addon-monitor",
   "version": "0.0.0",
   "description": "everything you need to build a Storybook addon",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/storybookjs/storybook-addon-monitor"
   },
   "author": "winkerVSbecks",
   "license": "MIT",
@@ -38,6 +38,9 @@
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs"
+  },
+  "dependencies": {
+    "react-inspector": "^5.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
