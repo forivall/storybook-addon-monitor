@@ -3,9 +3,9 @@
   "version": "0.1.6",
   "description": "Monitor a value returned by a callback",
   "keywords": [
-    "storybook",
     "storybook-addons",
     "data-state",
+    "storybook",
     "test"
   ],
   "repository": {
