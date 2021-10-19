@@ -19,8 +19,9 @@
   "files": [
     "dist/**/*",
     "README.md",
-    "*.js",
-    "*.d.ts"
+    "preset.js",
+    "*.d.ts",
+    "!stories"
   ],
   "scripts": {
     "clean": "rimraf ./dist",
