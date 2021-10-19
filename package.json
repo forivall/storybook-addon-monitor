@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-monitor",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Monitor a value returned by a callback",
   "keywords": [
     "storybook",
@@ -52,10 +52,10 @@
     "@babel/preset-typescript": "^7.13.0",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/react": "^6.3.6",
-    "np": "^7.5.0",
     "babel-loader": "^8.1.0",
     "concurrently": "^6.2.0",
     "dedent": "^0.7.0",
+    "np": "^7.5.0",
     "prettier": "^2.3.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
