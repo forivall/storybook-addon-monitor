@@ -1,17 +1,18 @@
 {
   "name": "storybook-addon-monitor",
   "version": "0.1.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "Monitor a value returned by a callback",
   "keywords": [
+    "storybook",
     "storybook-addons",
-    "style",
+    "data-state",
     "test"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-monitor"
+    "url": "https://github.com/forivall/storybook-addon-monitor"
   },
-  "author": "winkerVSbecks",
+  "author": "forivall",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -85,11 +86,9 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Addon Kit",
-    "supportedFrameworks": [
-      "react",
-      "vue",
-      "angular"
+    "displayName": "Monitor",
+    "unsupportedFrameworks": [
+      "react-native"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }
