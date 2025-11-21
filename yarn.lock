@@ -11055,10 +11055,10 @@ zwitch@^1.0.0:
   resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-1.0.5.tgz#d11d7381ffed16b742f6af7b3f223d5cd9fe9920"
   integrity sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 
-zx@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/zx/-/zx-4.2.0.tgz#5f7c15f4446ad33ae23717e5aba4c0199aa90851"
-  integrity sha512-/4f7FaJecA9I655KXKXIHO3CFNYjAz2uSmTz6v2eNlKdrQKyz4VyF3RjqFuP6nQG+Hd3+NjOvrVNBkv8Ne9d4Q==
+zx@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/zx/-/zx-4.3.0.tgz#6275115c7cc914461a7d77e52abb60c15cb62d9e"
+  integrity sha512-KuEjpu5QFIMx0wWfzknDRhY98s7a3tWNRmYt19XNmB7AfOmz5zISA4+3Q8vlJc2qguxMn89uSxhPDCldPa3YLA==
   dependencies:
     "@types/fs-extra" "^9.0.12"
     "@types/minimist" "^1.2.2"
